@@ -2,7 +2,7 @@ import logo from "../../assets/arrosage-logo-blanc-4.png"
 
 export default function Footer() {
     return (
-        <footer className="bg-black py-10">
+        <footer className=" bg-black py-10">
             <div className="mx-auto flex flex-wrap items-center justify-around text-white">
                 <div className="table ">
                     <h3 className="font-bold text-lg underline">Navigation</h3>
@@ -16,7 +16,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="">
-                    <img src={logo} alt="Logo arrosage2.0" />
+                    <a href="#"><img src={logo} alt="Logo arrosage2.0" /></a>
                 </div>
                 <div className="table ">
                     <h3 className="font-bold text-lg underline ">Nous Trouver</h3>
