@@ -7,9 +7,9 @@ export default function Footer() {
                 <div className="table ">
                     <h3 className="font-bold text-lg underline">Navigation</h3>
                     <ul className="">
-                        <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="#">Accueil</a></li>
+                        <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="/">Accueil</a></li>
                         <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="#">Nos Services</a></li>
-                        <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="#">Nous Contacter</a></li>
+                        <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="/contact">Nous Contacter</a></li>
                         <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="#">Mentions légales</a></li>
                         <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="#">Confidentialité</a></li>
                         <li className="hover:font-bold transition-all duration-150 ease-in-out"><a href="#">Plan du site</a></li>
