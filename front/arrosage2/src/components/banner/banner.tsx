@@ -1,6 +1,6 @@
 import logo from "../../assets/logo-arrosage-1.png"
 
-export default function Banner() {
+function Banner() {
 return (
     <div className="flex flex-row justify-between mt-5 mb-10 mx-5">
         <div className="flex ">
@@ -16,5 +16,7 @@ return (
             </ul>
         </div>
     </div>
-)    
+);    
 }
+
+export default Banner;
