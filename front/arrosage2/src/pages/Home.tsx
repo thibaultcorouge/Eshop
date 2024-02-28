@@ -1,10 +1,10 @@
-import Navbar from "../components/navbar/navbar";
+import Menu from "../components/menu/menu";
 
 function Home() {
   return (
     <div className="Home">
     <nav>
-        <Navbar/>
+        <Menu/>
     </nav>
     </div>
   );

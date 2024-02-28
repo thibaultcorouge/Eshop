@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Menu() {
     return (
         <div className="mb-6">
             <ul className="flex flex-row justify-around">
