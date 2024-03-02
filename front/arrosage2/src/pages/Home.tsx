@@ -1,4 +1,5 @@
-import Menu from "../components/menu/menu";
+import Menu from "../components/menu/menu"
+// import Carousel from "../components/carousel/carousel"
 
 function Home() {
   return (
@@ -6,6 +7,7 @@ function Home() {
     <nav>
         <Menu/>
     </nav>
+    {/* <Carousel /> */}
     </div>
   );
 }
