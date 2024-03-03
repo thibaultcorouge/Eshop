@@ -25,8 +25,8 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="mr-2">
-                            <h2 className="mb-2 text-sm font-semibold text-gray-900 uppercase dark:text-white">A Propos</h2>
-                            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                            <h2 className="mb-2 text-sm font-semibold text-gray-500 uppercase dark:text-white">A Propos</h2>
+                            <ul className="text-gray-300 dark:text-gray-300 font-medium">
                                 <li className="mb-1">
                                     <a href="/contact" className="hover:underline">Contactez-nous</a>
                                 </li>
