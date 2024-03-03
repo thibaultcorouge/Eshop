@@ -2,10 +2,13 @@
 import express from "express";
 import sequelize from "./config/db";
 import bodyParser from "body-parser"
+import cors from "cors";
+
 
 
 //initialize Express App
 const app = express();
+app.use(cors());
 //specific headers of access control in order to avoid CORS error
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -13,8 +16,14 @@ app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
 });
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true}));
 
-// initialize Sequelize with the config.tsx file
+app.get("/", (req, res) => {//
+    res.json({message: "itworks1"});//test
+});//
+
+// initialize Sequelize with the config.ts file
 (async () => {
     try {
         await sequelize.authenticate();
@@ -25,6 +34,5 @@ app.use((req, res, next) => {
   }
 })();
 
-app.use(bodyParser.json());
 
 module.exports = app;
