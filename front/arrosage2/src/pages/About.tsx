@@ -25,7 +25,7 @@ function About() {
             <div className="object-cover bg-cover bg-center h-auto w-auto p-20 rounded-b-md" style={{ backgroundImage : `url(${backgroundImage})`}} >
                 <h1 className="font-bold p-10 text-white text-3xl text-center md:text-left" >Nos Services</h1>
             </div>
-            <div className="m-20">
+            <div className="md:m-20">
                 <div className="m-10">
                     <h2 className="m-50 mb-5 text-center text-teal-500 text-xl font-bold md:text-left">ARROSAGE 2.0 vous propose des solutions personnalisées et évolutives</h2>
 

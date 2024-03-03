@@ -24,11 +24,22 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
         return(
             <div>
                 {paragraphs.map(({key, title, content}) => (
-                        <div className="m-5 " key={key}>
-                            <button className="flex items-center " type="button" onClick={() => handleFilterOpening(key)}>
-                                {isOpen[key] ? (<FontAwesomeIcon icon={faChevronDown} className="m-1"/>):(<FontAwesomeIcon icon={faChevronRight} className="m-1" />) }<h2 className="pl-2">{title}</h2> 
+                        <div className="md:mb-5 mb-3 md:mt-5 p-2 border-2 border-grey rounded-lg border-" key={key}>
+                            <button 
+                            className="flex items-center focus:outline-none" 
+                            type="button" 
+                            onClick={() => handleFilterOpening(key)}>
+                                <FontAwesomeIcon icon={isOpen[key] ? faChevronDown : faChevronRight}
+                                className="transform transition-transform duration-500 ease-in-out mr-2" />
+                                <h2 className="text-lg text-teal-500 font-semibold">{title}</h2> 
                             </button>
-                            {isOpen[key] && <div className="m-2">{content}</div>}
+                            <div className={`${isOpen[key] ? "max-h-screen" : "max-h-0"} overflow-hidden transition-all duration-500 ease-in-out`}>
+                                <div className="py-3">
+                                    <p className="text-gray-800">
+                                        {content}
+                                    </p> 
+                                </div>
+                            </div>
                         </div>
                 ))}
             </div>
