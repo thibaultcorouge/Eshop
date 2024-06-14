@@ -1,7 +1,6 @@
 const http = require('http'); //Import Node.js core module
 const app = require('./app');
 
-
 const normalizePort = (val:any) => { //normalizePort this function returns a valid port wether it's a number or a string.
     const port = parseInt(val, 10);
 
@@ -14,7 +13,7 @@ const normalizePort = (val:any) => { //normalizePort this function returns a val
     return false;
 };
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3001');
 app.set('port', port);
 
 const errorHandler = (error:any) => { // errorHandler this function seek all the errors and handle it. then save it in the server. 
